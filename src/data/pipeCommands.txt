@@ -1,0 +1,5 @@
+osmfilter macedonia-latest.osm --keep="natural=peak" | osmconvert64-0.8.8p.exe - --all-to-nodes --csv="@id @lon @lat name ele" --csv-headline --csv-separator="," -o="peak.csv"
+osmfilter macedonia-latest.osm --keep="natural=cave_entrance" | osmconvert64-0.8.8p.exe - --all-to-nodes --csv="@id @lon @lat name length depth" --csv-headline --csv-separator="," -o="cave.csv"
+osmfilter macedonia-latest.osm --keep="natural=spring" | osmconvert64-0.8.8p.exe - --all-to-nodes --csv="@id @lon @lat name tourism" --csv-headline --csv-separator="," -o="spring.csv"
+osmfilter macedonia-latest.osm --keep="waterway=waterfall" | osmconvert64-0.8.8p.exe - --all-to-nodes --csv="@id @lon @lat name ele" --csv-headline --csv-separator="," -o="waterfall.csv"
+osmfilter macedonia-latest.osm --keep="tourism=alpine_hut" | osmconvert64-0.8.8p.exe - --all-to-nodes --csv="@id @lon @lat name operator capacity ele" --csv-headline --csv-separator="," -o="lodge.csv"
